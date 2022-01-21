@@ -25,9 +25,9 @@ else:
 os.mkdir(path + "/" + projectName)
 os.mkdir(path + "/" + projectName + "/srcs")
 os.mkdir(path + "/" + projectName + "/includes")
-copyfile("templates/Makefile", path + "/" + projectName + "/Makefile")
-copyfile("templates/header.h", path + "/" + projectName + "/includes/" + projectName + ".h")
-copyfile("templates/main.c", path + "/" + projectName + "/srcs/main.c")
+copyfile(os.path.dirname(os.path.realpath(__file__)) + "/templates/Makefile", path + "/" + projectName + "/Makefile")
+copyfile(os.path.dirname(os.path.realpath(__file__)) + "/templates/header.h", path + "/" + projectName + "/includes/" + projectName + ".h")
+copyfile(os.path.dirname(os.path.realpath(__file__)) + "/templates/main.c", path + "/" + projectName + "/srcs/main.c")
 Repo.clone_from("https://github.com/JeremyBosquet/libft", path + "/" + projectName + "/libft")
 
 # EDIT MAIN TEMPLATE
