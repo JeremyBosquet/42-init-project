@@ -6,3 +6,4 @@ This python script create folder with name's of project
 - Create Makefile
 - Create includes folder with header file
 - Create srcs folder with main file
+- Import my libft from my repo Github
